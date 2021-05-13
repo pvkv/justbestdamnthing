@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+:root {
+    --padding-scale: 2%;
+    --introduction-screen-background-color: darksalmon;
+
+    --padding-button-horizontal: 2%;
+    --padding-button-vertical: 1%;
+
+    --aspect-ratio-1to1-img: 500px;
+
+    --link-color-unvisited: black;
+    --link-color-visited: #6181ff;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: var(--padding-scale) 1fr 1fr var(--padding-scale);
+    grid-template-rows: auto 1fr 20vh;
+    grid-template-areas: 
+        "navbar navbar navbar navbar"
+        "introduction-screen introduction-screen introduction-screen introduction-screen"
+        "footer footer footer footer";
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+}
+
+.introduction-screen {
+    grid-area: introduction-screen;
+    height: 90vh;
+    background-color: var(--introduction-screen-background-color);
+    padding: 0 var(--padding-scale) 0 var(--padding-scale);
+    align-content: center;
+}
+
+.navbar {
+    padding: 0 var(--padding-scale) 0 var(--padding-scale);
+    grid-area: navbar;
+    background-color: var(--introduction-screen-background-color);
+}
+
+.navbar-links-list {
+    list-style-type: none;
+    margin: 0;
+    padding-top: var(--padding-scale);
+    padding-left: 0;
+    text-align: center;
+    align-content: center;
+}
+
+li {
+    display: inline-grid;
+    align-items: center;
+    border: 2px solid #ff6961;
+    padding: var(--padding-button-vertical) var(--padding-button-horizontal) var(--padding-button-vertical) var(--padding-button-horizontal);
+}
+
+li:hover {
+    background-color: #ff6961;
+    font-weight: 400;
+}
+
+
+li a {
+    text-decoration: none;
+    
+}
+
+li a h1 {
+    margin: 0;
+    font-weight: 400;
+    color: black;
+}
+
+a:visited {
+    color: var(--link-color-visited);
+}
+
+a:link {
+    color: var(--link-color-unvisited);
+}
+
+img {
+    padding: 0 var(--padding-button-horizontal) 0 var(--padding-button-horizontal);
+    max-width: var(--aspect-ratio-1to1-img);
+    max-height: var(--aspect-ratio-1to1-img);
+    height: auto;
+    width: auto;
+    align-self: center;
+}
+
+.footer {
+    padding: 0 var(--padding-scale) 0 var(--padding-scale);
+    grid-area: footer;
+    background-color: darkseagreen;
+}
+
+@media (max-width: 840px) {
+    li {
+        display: grid;
+        grid-gap: 50px;
+    }
+}
