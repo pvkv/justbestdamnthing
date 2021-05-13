@@ -86,6 +86,7 @@ a:link {
 
 img {
     padding: 0 var(--padding-button-horizontal) 0 var(--padding-button-horizontal);
+    border: 3px dashed #fff333;
     max-width: var(--aspect-ratio-1to1-img);
     max-height: var(--aspect-ratio-1to1-img);
     height: auto;
