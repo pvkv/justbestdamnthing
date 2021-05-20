@@ -11,6 +11,9 @@
 
     --link-color-unvisited: black;
     --link-color-visited: #6181ff;
+    
+    --transition-param: transform 0.5s;
+    --transform--param: scale(1.2);
 }
 
 body {
@@ -96,14 +99,14 @@ img {
 }
 
 img:hover {
-    transition: transform 0.5s;
-    transform: scale(1.2);
-    -moz-transition: transform 0.5;
-    -moz-transform: scale(1.2);
-    -webkit-transition: transform 0.5s;
-    -webkit-transform: scale(1.2);
-    -o-transition: transform 0.5s;
-    -o-transform: scale(1.2);
+    transition: var(--transition-param);
+    transform: var(--transform--param);
+    -moz-transition: var(--transition-param);
+    -moz-transform: var(--transform--param);
+    -webkit-transition: var(--transition-param);
+    -webkit-transform: var(--transform--param);
+    -o-transition: var(--transition-param);
+    -o-transform: var(--transform--param);
 }
 
 .footer {
