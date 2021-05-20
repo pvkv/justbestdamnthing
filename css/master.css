@@ -120,4 +120,8 @@ img:hover {
         display: grid;
         grid-gap: 50px;
     }
+    
+    .introduction-screen {
+        text-align: center;
+    }
 }
