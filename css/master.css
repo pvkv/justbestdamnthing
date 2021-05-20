@@ -31,7 +31,7 @@ body {
 
 .introduction-screen {
     grid-area: introduction-screen;
-    height: 90vh;
+    height: auto;
     background-color: var(--introduction-screen-background-color);
     padding: 0 var(--padding-scale) 0 var(--padding-scale);
     align-content: center;
