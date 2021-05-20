@@ -95,6 +95,11 @@ img {
     align-self: center;
 }
 
+img:hover {
+    transition: transform 0.5s;
+    transform: scale(1.2);
+}
+
 .footer {
     padding: 0 var(--padding-scale) 0 var(--padding-scale);
     grid-area: footer;
