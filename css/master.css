@@ -98,6 +98,12 @@ img {
 img:hover {
     transition: transform 0.5s;
     transform: scale(1.2);
+    -moz-transition: transform 0.5;
+    -moz-transform: scale(1.2);
+    -webkit-transition: transform 0.5s;
+    -webkit-transform: scale(1.2);
+    -o-transition: transform 0.5s;
+    -o-transform: scale(1.2);
 }
 
 .footer {
