@@ -11,7 +11,7 @@
 
     --link-color-unvisited: black;
     --link-color-visited: #6181ff;
-    
+
     --transition-param: transform 0.5s;
     --transform--param: scale(1.2);
 }
@@ -23,7 +23,7 @@ body {
     display: grid;
     grid-template-columns: var(--padding-scale) 1fr 1fr var(--padding-scale);
     grid-template-rows: auto 1fr 20vh;
-    grid-template-areas: 
+    grid-template-areas:
         "navbar navbar navbar navbar"
         "introduction-screen introduction-screen introduction-screen introduction-screen"
         "footer footer footer footer";
@@ -39,6 +39,7 @@ body {
     background-color: var(--introduction-screen-background-color);
     padding: 0 var(--padding-scale) 0 var(--padding-scale);
     align-content: center;
+    text-align: center;
 }
 
 .navbar {
@@ -71,7 +72,7 @@ li:hover {
 
 li a {
     text-decoration: none;
-    
+
 }
 
 li a h1 {
@@ -120,7 +121,7 @@ img:hover {
         display: grid;
         grid-gap: 50px;
     }
-    
+
     .introduction-screen {
         text-align: center;
     }
